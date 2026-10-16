@@ -1,4 +1,4 @@
-[DEPLOY.md](https://github.com/user-attachments/files/33582857/DEPLOY.md)
+[DEPLOY .md](https://github.com/user-attachments/files/33582917/DEPLOY.1.md)
 # U查询 — Cloudflare 部署教程
 
 从零开始，把 `worker.js` 部署到 Cloudflare Workers 并跑起来。跟着做就行，不需要写代码。
@@ -41,16 +41,9 @@
 ## 四、绑定 D1 到 Worker
 
 1. 回到 **Workers and Pages** → 点你的 Worker（`u-query`）
-2. **Settings** → **Bindings**（或 **Variables and Secrets** → **Bindings**，以页面实际显示为准）
-3. 点 **Add** → **D1 Database**
-4. 按下表填写：
-
-| 字段 | 填写内容 |
-|---|---|
-| Variable name（变量名） | `DB`（必须大写，必须是 DB） |
-| D1 database | 选第三步创建的数据库 |
-
-5. 点 **Add binding**，然后 **Save** / **Deploy** 使生效
+2. **Settings** → **Bindings** → 点 **Add** → **D1 Database**
+3. 变量名填 `DB`，数据库选第三步创建的那个，点 **Add binding**
+4. 点 **Save** / **Deploy** 使生效
 
 ---
 
